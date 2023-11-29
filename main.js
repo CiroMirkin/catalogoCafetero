@@ -10,14 +10,16 @@ const showCatalog = (catalog) => {
     const catalogElement = document.getElementById("list")
     catalogElement.innerHTML = catalog.map(toaster => `
         <li class="toaster">
-            <div class="logo-container">
-                <img src="${toaster.logoUrl}" class="logo-container__logo">
-            </div>
-            <div class="info">
-                <h3 class="name">${toaster.name}</h3>
-                <a href="${toaster.website}">Sitio web</a>
-                <a href="${toaster.instagram}">Instagram</a>
-            </div>
+            <header>
+                <h3>${toaster.name}</h3>
+            </header>
+            <main>
+                <img src="${toaster.logoUrl}" class="toaster-logo">
+            </main>
+            <footer class="info">
+                <a href="${toaster.website}" target="_blank">Sitio web</a>
+                <a href="${toaster.instagram}" target="_blank">Instagram</a>
+            </footer>
         </li>
     `).join("")
     
