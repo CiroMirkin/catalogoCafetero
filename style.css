@@ -30,7 +30,7 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem;
     margin: 0;
     text-align: center;
 }
@@ -94,12 +94,15 @@ body {
 }
 .main {
     width: 100%;
-    padding: 1rem 2.6rem;
-
+    padding: 4rem 2.6rem 1rem;
+    display: grid;
+    place-content: center;
+    background: #81997860;
 }
 
 .toaster-catalog {
-    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
     padding: 0;
 
     display: flex;
@@ -110,15 +113,14 @@ body {
     list-style: none;
 }
 .toaster {
-    min-width: 400px;
-    max-width: 500px;
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     border: 2px solid #000;
     border-radius: 0;
-    background: #e6e1e1;
+    background: #fafaf9;
 }
 .toaster header {
     width: 100%;
@@ -138,7 +140,7 @@ body {
     height: auto;
     display: grid;
     place-items: center;
-    background: #5a7d78;
+    background: #5a7d78ad;
 
 }
 .toaster main .toaster-logo {
@@ -171,5 +173,5 @@ body {
     border-radius: 6px;
 }
 .toaster .info a:hover {
-    background: #7369de;
+    background: #81997860;
 }
