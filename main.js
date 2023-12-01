@@ -3,8 +3,10 @@ const URL = "https://ciromirkin.github.io/toasterCatalog_API/toasterCatalog.txt"
 fetch(URL)
     .then(res => res.json()).then(res => {
         const catalog = res;
-        showCatalog(catalog)
+        showCatalog(shuffleList(catalog))
 })
+
+const shuffleList = (list) => list.sort(() => Math.random() - 0.5);
 
 const showCatalog = (catalog) => {
     const catalogElement = document.getElementById("list")
