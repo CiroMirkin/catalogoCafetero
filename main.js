@@ -19,8 +19,8 @@ const showCatalog = (catalog) => {
                 <h3>${toaster.name}</h3>
             </main>
             <footer class="info">
-                <a href="${toaster.website}" target="_blank">Sitio web</a>
-                <a href="${toaster.instagram}" target="_blank">Instagram</a>
+                <a href="${toaster.website}" target="_blank"><i class="icon-globe"></i></a>
+                <a href="${toaster.instagram}" target="_blank"><i class="icon-insta"></i></a>
             </footer>
         </li>
     `).join("")
