@@ -12,11 +12,11 @@ const showCatalog = (catalog) => {
     const catalogElement = document.getElementById("list")
     catalogElement.innerHTML = catalog.map(toaster => `
         <li class="toaster">
-            <header>
-                <h3>${toaster.name}</h3>
-            </header>
             <main>
-                <img src="${toaster.logoUrl}" class="toaster-logo">
+                <div class="toaster__logo">
+                    <img src="${toaster.logoUrl}" class="toaster__logo-logo">
+                </div>
+                <h3>${toaster.name}</h3>
             </main>
             <footer class="info">
                 <a href="${toaster.website}" target="_blank">Sitio web</a>

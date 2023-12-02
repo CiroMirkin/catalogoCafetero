@@ -113,14 +113,14 @@ body {
 
 .main {
     width: 100%;
-    padding: 4rem 2.6rem 1rem;
+    padding: 4rem 1rem 1rem;
     display: grid;
     place-content: center;
     background: #81997860;
 }
 
 .toaster-catalog {
-    min-width: 400px;
+    min-width: 300px;
     max-width: 500px;
     padding: 0;
 
@@ -141,40 +141,41 @@ body {
     border-radius: 0;
     background: #fafaf9;
 }
-.toaster header {
-    width: 100%;
-    padding: 0.6rem 0.2rem;
-    border-bottom: 2px solid #000;
-}
-.toaster header h3 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-}
 .toaster main {
     width: 100%;
-    max-height: 10rem;
-    padding: 16px 10px;
-    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    padding: 0.6rem 1rem;
+}
+.toaster main h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+.toaster__logo {
+    width: 48px;
+    height: 48px;
+    padding: 1px;
     display: grid;
     place-items: center;
-    background: #5a7d78ad;
-
+    border-radius: 100%;
+    background: #fafaf9;
 }
-.toaster main .toaster-logo {
+.toaster__logo-logo {
     display: block;
     width: 100%;
-    max-height: calc(10rem - (16px + 16px));
+    height: auto;
     object-fit: contain;
 }
 .toaster .info {
-    width: 100%;
+    width: auto;
     padding: .6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #000;
 }
 .toaster .info a {
     display: inline-block;
