@@ -3,6 +3,11 @@
     src: url('./Inter.ttf');
 }
 
+:root {
+    --primary-color: #55423d;
+    --accent-color: #ffc0ad;
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -14,7 +19,7 @@ body {
     font-size: 62.5%;
     font-family: 'Inter', sans-serif;
 
-    background: #55423d;
+    background: var(--primary-color);
 }
 
 *, 
@@ -51,10 +56,10 @@ body {
     display: grid;
     place-items: center;
     border-radius: 18px;
-    background-color: #55423d;
+    background-color: var(--primary-color);
 }
 .insta:hover {
-    background-color: #ffc0ad;
+    background-color: var(--accent-color);
 }
 .icon-insta {
     display: block;
@@ -118,7 +123,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: bold;
-    color: #ffc0ad;
+    color: var(--accent-color);
 }
 .footer .insta {
     margin: 0;
@@ -152,7 +157,7 @@ body {
     border: solid 0.125rem #000;
     box-shadow: 0.25rem 0.25rem #000;
     border-radius: 0.25rem;
-    background: #ffc0ad;
+    background: var(--accent-color);
 
 }
 .toaster main {
@@ -176,7 +181,7 @@ body {
     display: grid;
     place-items: center;
     border-radius: 100%;
-    background: #ffc0ad;
+    background: var(--accent-color);
 }
 .toaster__logo-logo {
     display: block;
