@@ -14,7 +14,7 @@ body {
     font-size: 62.5%;
     font-family: 'Inter', sans-serif;
 
-    background: #fafaf9;
+    background: #552F00;
 }
 
 *, 
@@ -33,6 +33,7 @@ body {
     padding: 4rem 2rem 1rem;
     margin: 0;
     text-align: center;
+    color: #FFD9AA;
 }
 .header h1 {
     margin: 0 0 16px;
@@ -50,10 +51,10 @@ body {
     display: grid;
     place-items: center;
     border-radius: 18px;
-    background-color: #fafaf9;
+    background-color: #FFD9AA;
 }
 .insta:hover {
-    background-color: #7369de;
+    background-color: #D4A56A;
 }
 .icon-insta {
     display: block;
@@ -117,6 +118,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: bold;
+    color: #FFD9AA;
 }
 .footer .insta {
     margin: 0;
@@ -127,7 +129,7 @@ body {
     padding: 4rem 1rem 1rem;
     display: grid;
     place-content: center;
-    background: #81997860;
+    background: #805015;
 }
 
 .toaster-catalog {
@@ -150,7 +152,7 @@ body {
     border: solid 0.125rem #000;
     box-shadow: 0.25rem 0.25rem #000;
     border-radius: 0.25rem;
-    background: #fafaf9;
+    background: #FFD9AA;
 
 }
 .toaster main {
@@ -174,7 +176,7 @@ body {
     display: grid;
     place-items: center;
     border-radius: 100%;
-    background: #fafaf9;
+    background: #FFD9AA;
 }
 .toaster__logo-logo {
     display: block;
