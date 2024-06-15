@@ -1,5 +1,5 @@
 
-const URL = "https://ciromirkin.github.io/toasterCatalog_API/toasterCatalog.txt";
+const URL = "https://ciromirkin.github.io/toasterCatalog_API/catalog.txt";
 fetch(URL)
     .then(res => res.json()).then(res => {
         const catalog = res;
